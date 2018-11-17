@@ -1,6 +1,6 @@
 # Instructions
 
-1. Download [ns-allinone-2.31.tar.gz](ns-allinone-2.31.tar.xz)
+1. Download [ns-allinone-2.31.tar.xz](ns-allinone-2.31.tar.xz)
 
 2. Right Click on the file and click `Extract Here`.
 
