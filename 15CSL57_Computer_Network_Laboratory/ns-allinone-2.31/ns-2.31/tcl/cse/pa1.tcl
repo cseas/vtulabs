@@ -19,24 +19,19 @@ set n1 [$ns node]
 set n2 [$ns node]
 set n3 [$ns node]
 
-#$ns color 1 "red"
-#$ns color 2 "blue"
-
 $ns duplex-link $n0 $n2 20Mb 10ms DropTail
 $ns duplex-link $n1 $n2 50Mb 5ms DropTail
 $ns duplex-link $n2 $n3 10Mb 1000ms DropTail
 
-#$ns duplex-link $n0 $n2 color "green"
-
-$ns queue-limit $n0 $n2 10
-$ns queue-limit $n1 $n2 10
+$ns queue-limit $n0 $n2 4
+$ns queue-limit $n1 $n2 4
 
 set udp0 [new Agent/UDP]
 $ns attach-agent $n0 $udp0
 
 set cbr0 [new Application/Traffic/CBR]
-$cbr0 set packetSize_ 500
-$cbr0 set interval_ 0.005
+$cbr0 set packetSize_ 5000
+$cbr0 set interval_ 0.5
 $cbr0 attach-agent $udp0
 
 set udp1 [new Agent/UDP]
