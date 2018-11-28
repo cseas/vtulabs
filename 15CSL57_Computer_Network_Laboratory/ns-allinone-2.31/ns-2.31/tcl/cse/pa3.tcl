@@ -1,19 +1,24 @@
 set ns [new Simulator]
+
 set tf [open pa3.tr w]
 $ns trace-all $tf
+
 set nf [open pa3.nam w]
 $ns namtrace-all $nf
 
 set n0 [$ns node]
 $n0 color "magenta"
 $n0 label "src1"
+
 set n1 [$ns node]
 set n2 [$ns node]
 $n2 color "magenta"
 $n2 label "src2"
+
 set n3 [$ns node]
 $n3 color "blue"
 $n3 label "dest2"
+
 set n4 [$ns node]
 set n5 [$ns node]
 $n5 color "blue"
@@ -24,10 +29,12 @@ $ns duplex-link $n4 $n5 1Mb 1ms DropTail
 
 set tcp0 [new Agent/TCP]
 $ns attach-agent $n0 $tcp0
+
 set ftp0 [new Application/FTP]
 $ftp0 attach-agent $tcp0
 $ftp0 set packetSize_ 500
 $ftp0 set interval_ 0.0001
+
 set sink5 [new Agent/TCPSink]
 $ns attach-agent $n5 $sink5
 

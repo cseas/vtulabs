@@ -1,19 +1,26 @@
+# Create a simulator object
 set ns [new Simulator]
 
+# Open NAM trace file
 set nf [open pa1.nam w]
 $ns namtrace-all $nf
 
 set tf [open pa1.tr w]
 $ns trace-all $tf
 
+# Define finish procedure
 proc finish {} {
-global ns nf tf
-$ns flush-trace
-close $nf
-close $tf
-exec nam pa1.nam &
-exit 0
+    global ns nf tf
+    $ns flush-trace
+    # Close NAM trace file
+    close $nf
+    close $tf
+    # Execute NAM on the trace file
+    exec nam pa1.nam &
+    exit 0
 }
+
+# Create four nodes
 set n0 [$ns node]
 set n1 [$ns node]
 set n2 [$ns node]
