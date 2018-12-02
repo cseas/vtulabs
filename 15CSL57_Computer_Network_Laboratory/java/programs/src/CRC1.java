@@ -1,4 +1,4 @@
-/* Write a program for error detecting code using CRC CCITT (16 bits).
+/* 7. Write a program for error detecting code using CRC CCITT (16 bits).
    CRC - Cyclic Redundancy Check
    CCITT - Consultative Committee for International Telegraphy and Telephone
    Created by Abhijeet Singh

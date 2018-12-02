@@ -1,4 +1,4 @@
-/* Write a program to find the shortest path between vertices using Bellman ford algorithm.
+/* 8. Write a program to find the shortest path between vertices using Bellman ford algorithm.
    Created by Abhijeet Singh
  */
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-/* Using TCP/IP sockets, write a client-server program to make the
+/* 9. Using TCP/IP sockets, write a client-server program to make the
    client send the file name and to make the server send back the
    contents of the requested file if present.
    Created by Abhijeet Singh
@@ -13,15 +13,14 @@ public class ContentServer {
         Socket sock = sersock.accept();
         System.out.println("Connection is successful");
 
+//        Get file name from client
         InputStream istream = sock.getInputStream();
-        BufferedReader fileRead = new BufferedReader(new InputStreamReader(istream));
+        BufferedReader nameRead = new BufferedReader(new InputStreamReader(istream));
+        String fname = nameRead.readLine();
 
-        String fname = fileRead.readLine();
-
+//        Send file contents to client
         BufferedReader contentRead = new BufferedReader(new FileReader(fname));
-
         OutputStream ostream = sock.getOutputStream();
-
         PrintWriter pwrite = new PrintWriter(ostream, true);
 
         String str;
@@ -33,7 +32,7 @@ public class ContentServer {
         sersock.close();
         sock.close();
 
-        fileRead.close();
+        nameRead.close();
         contentRead.close();
         pwrite.close();
     }
