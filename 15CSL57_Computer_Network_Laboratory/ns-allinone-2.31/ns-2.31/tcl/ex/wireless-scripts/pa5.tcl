@@ -40,7 +40,7 @@ proc cell_topo {} {
   $ns duplex-link $nodes(bs1) $nodes(ms) 1 1 RED 
   $ns duplex-link $nodes(ms) $nodes(bs2) 1 1 RED
   $ns duplex-link $nodes(bs2) $nodes(is) 3Mbps 50nodes(ms) DropTail
-  puts " GSM Cell Topology"
+  puts "GSM Cell Topology"
 }
 proc set_link_para {t} {
   global ns nodes bwUL bwDL propUL propDL buf
@@ -90,17 +90,17 @@ if {$flows > 0} {
 
 proc stop {} {
 	global nodes opt nf 
-        set wrap $opt(wrap)
+    set wrap $opt(wrap)
 	set sid [$nodes($opt(srcTrace)) id]
 	set did [$nodes($opt(dstTrace)) id]
 	set a "out.tr"
 	set GETRC "../../../bin/getrc"
-        set RAW2XG "../../../bin/raw2xg"
-        exec $GETRC -s $sid -d $did -f 0 out.tr | \
-          $RAW2XG -s 0.01  -m $wrap -r > plot.xgr
-        exec $GETRC -s $did -d $sid -f 0 out.tr | \
-          $RAW2XG -a -s 0.01 -m $wrap  >> plot.xgr
-        exec xgraph -x time -y packets plot.xgr &
+    set RAW2XG "../../../bin/raw2xg"
+    exec $GETRC -s $sid -d $did -f 0 out.tr | \
+      $RAW2XG -s 0.01  -m $wrap -r > plot.xgr
+    exec $GETRC -s $did -d $sid -f 0 out.tr | \
+      $RAW2XG -a -s 0.01 -m $wrap  >> plot.xgr
+    exec xgraph -x time -y packets plot.xgr &
  	exit 0
 }
 $ns at $stop "stop"
