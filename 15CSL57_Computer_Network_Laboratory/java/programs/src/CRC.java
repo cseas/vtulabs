@@ -4,7 +4,7 @@
    Created by Abhijeet Singh
  */
 import java.io.*;
-public class CRC1 {
+public class CRC {
     public static void main(String[] args) throws IOException {
         int[] message;
         int[] gen;
