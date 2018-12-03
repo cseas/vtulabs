@@ -1,10 +1,14 @@
 set ns [new Simulator]
+
 set tf [open pa4.tr w]
 $ns trace-all $tf
-set topo [new Topography]
-$topo load_flatgrid 1000 1000
+
 set nf [open pa4.nam w]
 $ns namtrace-all-wireless $nf 1000 1000
+
+set topo [new Topography]
+$topo load_flatgrid 1000 1000
+
 $ns node-config -adhocRouting DSDV \
 		-llType LL \
 		-macType Mac/802_11 \
@@ -17,7 +21,9 @@ $ns node-config -adhocRouting DSDV \
 		-topoInstance $topo \
 		-agentTrace ON \
 		-routerTrace ON
+
 create-god 3
+
 set n0 [$ns node]
 set n1 [$ns node]
 set n2 [$ns node]
