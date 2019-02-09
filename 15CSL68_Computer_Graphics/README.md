@@ -25,6 +25,8 @@ Use the following instructions to setup **OpenGL** with **Visual Studio Communit
     File > New > Project  
     Visual C++ > Windows Desktop > Windows Console Application
 
+    ![](../img/newproj.JPG)
+
 7. Go to `Project > Properties`.
 
     Select `All Configuration` from `Configuration` dropdown menu on top left corner.
