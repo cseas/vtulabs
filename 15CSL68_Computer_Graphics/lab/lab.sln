@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prog4_camera", "prog4_camer
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prog5_sutherland", "prog5_sutherland\prog5_sutherland.vcxproj", "{63A3982A-98EA-4DFD-BDF5-06BFEEAF710B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prog6_teapot", "prog6_teapot\prog6_teapot.vcxproj", "{AB08A421-7A87-4C71-B0CC-2A8BADE65D1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{63A3982A-98EA-4DFD-BDF5-06BFEEAF710B}.Release|x64.Build.0 = Release|x64
 		{63A3982A-98EA-4DFD-BDF5-06BFEEAF710B}.Release|x86.ActiveCfg = Release|Win32
 		{63A3982A-98EA-4DFD-BDF5-06BFEEAF710B}.Release|x86.Build.0 = Release|Win32
+		{AB08A421-7A87-4C71-B0CC-2A8BADE65D1E}.Debug|x64.ActiveCfg = Debug|x64
+		{AB08A421-7A87-4C71-B0CC-2A8BADE65D1E}.Debug|x64.Build.0 = Debug|x64
+		{AB08A421-7A87-4C71-B0CC-2A8BADE65D1E}.Debug|x86.ActiveCfg = Debug|Win32
+		{AB08A421-7A87-4C71-B0CC-2A8BADE65D1E}.Debug|x86.Build.0 = Debug|Win32
+		{AB08A421-7A87-4C71-B0CC-2A8BADE65D1E}.Release|x64.ActiveCfg = Release|x64
+		{AB08A421-7A87-4C71-B0CC-2A8BADE65D1E}.Release|x64.Build.0 = Release|x64
+		{AB08A421-7A87-4C71-B0CC-2A8BADE65D1E}.Release|x86.ActiveCfg = Release|Win32
+		{AB08A421-7A87-4C71-B0CC-2A8BADE65D1E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
