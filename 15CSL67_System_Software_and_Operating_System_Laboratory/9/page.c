@@ -87,7 +87,7 @@ void LRU(char str[], int len, int frames) {
                 for(m=k; m<top; m++) {
                     fqueue[m] = fqueue[m+1];
                 }
-                // place page at end of queue
+                // place the hit page at end of queue
                 fqueue[top] = str[i];
             }
         } // end else
