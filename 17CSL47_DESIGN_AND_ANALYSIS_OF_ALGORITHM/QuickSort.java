@@ -1,5 +1,5 @@
 /*
-Program 5 :
+Program 4 :
 Sort a given set of n integer elements using Quick Sort method
 and compute its time complexity. Run the program for varied
 values of n> 5000 and record the time taken to sort. Plot a
