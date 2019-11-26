@@ -1,0 +1,29 @@
+<?xml-stylesheet type="text/css" href="5.css"?>
+<all>
+  <student>
+    <usn>1MV16CS001</usn>
+    <name>John</name>
+    <college>Sir MVIT</college>
+    <branch>CSE</branch>
+    <YOJ>2016</YOJ>
+    <email>john@gmail.com</email>
+  </student>
+
+  <student>
+    <usn>1MV15ME002</usn>
+    <name>Jessi</name>
+    <college>Sir MVIT</college>
+    <branch>ME</branch>
+    <YOJ>2015</YOJ>
+    <email>jessi@yahoo.com</email>
+  </student>
+
+  <student>
+    <usn>1MV17EE003</usn>
+    <name>James</name>
+    <college>Sir MVIT</college>
+    <branch>EEE</branch>
+    <YOJ>2017</YOJ>
+    <email>james@outlook.com</email>
+  </student>
+</all>

@@ -1,0 +1,30 @@
+all {
+  display: block;
+  width: 100%;
+}
+
+student {
+  border-style: solid;
+  padding: 5px;
+  border-color: black;
+  display: block;
+  margin: 1.5em;
+}
+
+usn {
+  display: block;
+}
+
+name {
+  color: red;
+}
+
+college {
+  font-weight: bold;
+  display: block;
+}
+
+email {
+  color: blue;
+  display: block;
+}
