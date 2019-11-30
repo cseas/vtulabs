@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="scan_line.cpp">
+    <ClCompile Include="bresenham.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{DA1DCCC5-82AC-44CE-B406-3221912F04D6}</ProjectGuid>
+    <ProjectGuid>{8800FA1F-4066-40A7-A002-554F9BB9DCDA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>prog8flag</RootNamespace>
+    <RootNamespace>prog9scanline</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -135,7 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="bezier_curve.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

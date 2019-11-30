@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{B1F3085E-2B84-46A0-B15A-763DE5420815}</ProjectGuid>
+    <ProjectGuid>{92D4D27E-08A1-42CE-9E9D-56A5081A069F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>prog9polygon</RootNamespace>
+    <RootNamespace>prog8bezier</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -135,7 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="scan_line.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sierpinski.cpp">
+    <ClCompile Include="points.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

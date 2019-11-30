@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{CF348CEC-FB03-444C-84D1-5BDF3DB0EF24}</ProjectGuid>
+    <ProjectGuid>{E2AA116D-4B9D-42BB-AB6A-866F3F75FD37}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>prog7tetrahedron</RootNamespace>
+    <RootNamespace>samplepoints</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -135,7 +135,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="sierpinski.cpp" />
+    <ClCompile Include="points.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
