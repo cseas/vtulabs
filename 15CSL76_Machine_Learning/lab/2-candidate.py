@@ -11,15 +11,14 @@ with open('enjoysport2.csv', 'r') as csvFile:
 num_attributes = len(data[0]) - 1
 
 print("\nThe initial value of hypothesis:")
-S = ['0'] * num_attributes
 G = ['?'] * num_attributes
-print ("\nThe most specific hypothesis S0 : [0,0,0,0,0,0]")
-print ("The most general hypothesis G0 : [?,?,?,?,?,?]\n")
+S = ['0'] * num_attributes
+print ("The most general hypothesis G0:", G)
+print ("The most specific hypothesis S0:", S)
 
-# Comparing with First Training Example 
+# initialise specific hypothesis
 for j in range(num_attributes):
        S[j] = data[0][j];
-
 
 # Comparing with Remaining Training Examples of Given Data Set
 print("\nCandidate Elimination Algorithm: Hypothesis Version Space Computation\n")

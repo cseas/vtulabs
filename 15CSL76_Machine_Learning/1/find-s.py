@@ -30,15 +30,15 @@ with open("enjoysport.csv", 'r') as f:
     data.append(row)
     print(row)
 
-
+# initialise hypothesis with first sample
 hypothesis = [0] * len(attributes)
 for i in range(len(attributes)):
   hypothesis[i] = data[0][i]
 print("\nInitial value of hypothesis:", hypothesis)
 
 print("\nFind-S: Finding a Maximally Specific Hypothesis\n")
-
 for i in range(len(data)):
+  # if positive sample
   if data[i][-1] == "1":
     for j in range(len(attributes)):
       if data[i][j] != hypothesis[j]:

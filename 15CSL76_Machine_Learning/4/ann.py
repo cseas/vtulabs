@@ -67,10 +67,11 @@ for i in range(epoch):
     # update the weights
     # dot product of nextlayererror and currentlayerop
     weight_output += hlayer_activation.T.dot(d_output) * lr
-    bias_hidden += np.sum(d_hiddenlayer, axis=0, keepdims=True) * lr
+    bias_output += np.sum(d_output, axis=0, keepdims=True) * lr
 
     weight_hidden += X.T.dot(d_hiddenlayer) * lr
-    bias_output += np.sum(d_output, axis=0, keepdims=True) * lr
+    bias_hidden += np.sum(d_hiddenlayer, axis=0, keepdims=True) * lr
+    
 
 print("Input:\n" + str(X))
 print("Actual Output:\n" + str(y))
