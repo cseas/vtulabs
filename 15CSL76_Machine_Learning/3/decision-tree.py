@@ -104,7 +104,7 @@ def create_node(data, metadata):
   
   node = Node(metadata[split])    
 
-  metadata = np.delete(metadata, split, 0)                          
+  metadata = np.delete(metadata, split, 0)
   items, dict = subtables(data, split, delete=True)
     
   for x in range(items.shape[0]):

@@ -16,7 +16,7 @@ f1 = data['V1'].values
 f2 = data['V2'].values
 X = np.array(list(zip(f1, f2)))
 print('Graph for whole dataset')
-plt.scatter(f1, f2, c='black', s=200)
+plt.scatter(f1, f2, c='black', s=50)
 plt.show()
 
 ##########################################
@@ -27,16 +27,16 @@ print("Labels KMeans:", labels)
 
 print('Graph using Kmeans Algorithm')
 # plot all points, color the labels
-plt.scatter(X[:, 0], X[:, 1], c=labels, s=40)
+plt.scatter(X[:, 0], X[:, 1], c=labels, s=50)
 # mark centroids
 plt.scatter(centroids[:, 0], centroids[:, 1], marker='*', s=200, c='black')
 plt.show()
 
 
 # gmm demo
-gmm = GaussianMixture(n_components=2).fit(X)
-labels = gmm.predict(X)
+gmm = GaussianMixture(n_components=2)
+labels = gmm.fit(X).predict(X)
 print("\nLabels EM:", labels)
 print('Graph using EM Algorithm')
-plt.scatter(X[:, 0], X[:, 1], c=labels, s=40);
+plt.scatter(X[:, 0], X[:, 1], c=labels, s=40)
 plt.show()
